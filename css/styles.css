@@ -48,7 +48,8 @@ body {
 
 .search-box input {
   border: none;
-  padding: 10px;
+  /* padding: 10px; */
+  margin-left: 20px;
   flex: 1;
   outline: none;
 }
@@ -483,8 +484,6 @@ header {
   color: #005cff;      
   top: 50%;
   transform: translateY(-50%);
-  z-index: 10000;
-  overflow: visible;
   cursor: pointer;
 }
 
@@ -509,7 +508,9 @@ header {
 }
 
 .swiper-pagination {
-  transform: translateY(150%);
+  position: relative;
+  transform: translateY(50%);
+  cursor: pointer;
 }
 
 
@@ -659,9 +660,33 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
-  
 }
 
+.avanti-img {
+  position: relative;
+}
+
+.avanti-img img {
+  display: block;
+  max-width: 1920px;
+  height: 660px;
+}
+
+.avanti-img .contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Nunito';
+  color: #FFFFFF;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1920px;
+  transform: translate(-50%, -50%);
+  height: 132px;
+  background-color: #005cff;
+}
 
 /* Footer */
 footer {
@@ -670,3 +695,5 @@ footer {
     margin-top: 20px;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
 }
+
+
