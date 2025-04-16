@@ -48,7 +48,6 @@ body {
 
 .search-box input {
   border: none;
-  /* padding: 10px; */
   margin-left: 20px;
   flex: 1;
   outline: none;
@@ -86,46 +85,117 @@ body {
 .btn-category p {
   width: 130px;
   height: 22px;
+  font-family: 'Nunito Sans';
   font-weight: 700;
   font-size: 14px;
   white-space: nowrap; 
 }
 
-.btn-category img {
-  width: 14px;
-  height: 10px;
-  border: 2px;
+.btn-category p:hover, .btn-category-img:hover{
+  color: #005CFF;
+}
+
+/* Todas as categorias */
+
+.mega-menu {
+  width: 1261px;
+  height: 329px;
+  background-color: #fff;
+  margin-top: 15px;
+  position: absolute;
+  z-index: 10000;
+}
+
+.column-departamento {
+  width: 234px;
+  height: 329px;
+  left: -1px;
+  background-color: #fff;
+  margin-left: 20px;
+}
+
+.departamentos {
+  width: 234px;
+  height: 329px;
+  opacity: 57%;
+  overflow: auto;
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 14px;
+  color: #303030;
+  background-color: #fff;
+}
+
+.dep1 {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  gap: 92px;
+}
+
+.mega-menu .categorias {
+  display: flex;
+  width: 63px;
+  height: 236px;
+  gap: 70px;
+  align-items: center;
+}
+
+.categorias h4 {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  margin-top: 15px;
+  margin-left: 30px;
+  color: #656565;
+}
+
+.caneca-dep {
+  width: 236px;
+  height: 298px;
+  border-radius: 10px;
+  margin-top: 15px;
+  margin-left: 600px;
 }
 
 .nav-menu {
   position: relative;
 }
 
+.nav-link {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+}
+
 .menu {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    width: 200px;
-    display: none;
-    border-radius: 5px;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 200px;
+  display: none;
+  border-radius: 5px;
 }
 
 .menu ul {
-    list-style: none;
-    padding: 10px;
+  list-style: none;
+  padding: 10px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 8px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 8px;
 }
 
 .menu a:hover {
-    background: #f0f0f0;
+  background: #f0f0f0;
 }
 
 button {
@@ -142,7 +212,7 @@ button {
 .client {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   width: 164.31px;
   height: 28px;
   top: 52px;
@@ -159,18 +229,21 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   width: 115.57px;
   height: 28px;
+  gap: 5px;
 }
 
 .btn-person p {
-  width: px;
+  font-family: 'Nunito Sans';
+  width: 87px;
   height: 28px;
   font-size: 14px;
   line-height: 14px;
   font-weight: 600;
   letter-spacing: 0%;
+  white-space: nowrap; 
+  text-align: justify;
 }
 
 .promo {
@@ -206,15 +279,15 @@ button {
 }
 
 header {
-    background-color: #ffffff;
-    padding: 15px 30px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
 }
 
 .banner {
@@ -452,6 +525,10 @@ header {
   margin-top: 10px;
 }
 
+.card .comprar:hover {
+  background-color: #004CD2;
+}
+
 .card .details {
   display: flex;
   width: fit-content;
@@ -478,13 +555,13 @@ header {
 
 .swiper-button-next ,
 .swiper-button-prev {
-  width: 30px;
-  height: 30px;
-  position: absolute;
+  width: 32px;
+  height: 32px;
   color: #005cff;      
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+  overflow: hidden;
 }
 
 .swiper-button-prev {
@@ -493,6 +570,7 @@ header {
   background-position: center;
   background-size: auto;
   left: -15px;
+
 }
 
 .swiper-button-next {
@@ -505,6 +583,45 @@ header {
 .swiper-button-next::after,
 .swiper-button-prev::after {
   content: ""; 
+}
+
+.swiper-button-prev:hover {
+  transition: 0.2s;
+  background-image: url('../img/seta-para-a-esquerda.png');
+}
+
+.swiper-button-next:hover {
+  transition: 0.3s;
+  background-image: url('../img/seta-para-a-direita.png');
+}
+
+/* .swiper-button-prev::before,
+.swiper-button-next::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-color: #005CFF;
+  left: -30px;
+  border-radius: 10px;
+} */
+
+.swiper-button-prev:hover::before,
+.swiper-button-next:hover::before {
+  animation: desloca .5s;
+  left: 0;
+}
+
+@keyframes desloca {
+  0% {
+    left: -30%;
+  }
+  50% {
+    left: 15%;
+  }
+  100% {
+    left: 0;
+  }
 }
 
 .swiper-pagination {
@@ -540,7 +657,10 @@ header {
 }
 
 .primeiro-banner {
+  height: 747px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -588,7 +708,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1930px;
+  width: 1930px;
   height: 819px;
   margin-top: 40px;
   background-color: #DEDEDE;
@@ -668,7 +788,7 @@ header {
 
 .avanti-img img {
   display: block;
-  max-width: 1920px;
+  width: 1920px;
   height: 660px;
 }
 
@@ -688,12 +808,198 @@ header {
   background-color: #005cff;
 }
 
-/* Footer */
-footer {
-    background-color: #ffffff;
-    padding: 20px;
-    margin-top: 20px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+.cadastro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 230px;
+  margin-top: 30px;
 }
 
+.cadastro span {
+  color: #005CFF;
+}
 
+.cadastro h1 {
+  width: 301px;
+  height: 27px;
+  white-space: nowrap; 
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1260px;
+  height: 176px;
+  border-radius: 8px;
+  background-color: #DEDEDE;
+}
+
+.checkbox {
+
+  display: flex;
+  width: 1031px;
+  height: 48px;
+  left: 50%;
+  gap: 24px;
+  white-space: nowrap; 
+  align-items: center;
+}
+
+.checkbox #text{
+  width: 280px;
+  height: 48px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  font-weight: 400;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  color: #303030;
+  flex: 1;
+  padding-left: 20px;
+}
+
+.checkbox #check {
+  border: none;
+  width: 16px;
+  height: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.checkbox #text::placeholder {
+  width: 102px;
+  height: 19px;
+}
+
+.checkbox p {
+  width: 254px;
+  height: 16px;
+  font-family: 'Nunito Sans';
+  font-size: 12px;
+  font-weight: 700;
+  color: #656565;
+}
+
+.checkbox span {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 121px;
+  height: 48px;
+  border-radius: 8px;
+  background-color: #005CFF;
+  color: #fff;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* FOOTER */
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  height: 366px;
+  margin-top: 30px;
+  background-color: #F5F5F5;
+}
+
+.footer-container1 .forma-de-pagamento{
+  margin-top: 5rem;
+}
+
+.img-icons {
+  width: 194px;
+  height: 93px;
+  display: flex;
+  gap: 40px;
+  flex-direction: column;
+}
+
+.logo-avanti {
+  width: 152px;
+  height: 27px;
+}
+
+.icons {
+  display: flex;
+  gap: 40px;
+}
+
+.info {
+  margin-top: 50px;
+  width: 1160px;
+  height: 170px;
+  display: flex;
+  gap: 5rem;
+}
+
+.institucional, .central-ajuda {
+  width: 186px;
+  height: 142px;
+  line-height: 28px;
+}
+
+.atendimento {
+  width: 245px;
+  height: 156px;
+  line-height: 28px;
+}
+
+.atendimento span {
+  font-family: 14px;
+  font-weight: 700;
+}
+ 
+.institucional h4, .central-ajuda h4, .atendimento h4 {
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+  font-size: 14px;
+  color: #303030;
+}
+
+.institucional h5, .central-ajuda h5, .atendimento h5 {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+  font-size: 12px;
+  color: #303030;
+}
+
+.forma-de-pagamento {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-container2 {
+  width: 1920px;
+  height: 211px;
+  background-color: #FFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+
+.container-descricao p {
+  width: 1074px;
+  height: 59px;
+  font-family: 'Nunito Sans';
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 30px;
+  color: #303030;
+  
+}
