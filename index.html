@@ -16,7 +16,7 @@
   <div class="promo">
     <p>Ganhe <span class="dez">R$10,00</span> de desconto no seu primeiro pedido. Utilize o cupom <span class="desconto">DESCONTO10</span></p>
   </div>
-  <header class="nav-container">
+  <header class="nav-container" onmouseleave="hideMenu(); hideCategory()" onclick="hideMenu(), hideCategory()">
     <img src="img/logo.svg" alt="Avanti" class="logo">
     <div class="search-box">
       <input type="text" id="search-input" class="form-control" placeholder="Digite aqui o que você procura">
@@ -30,16 +30,19 @@
           <p>Olá,<br> Nome cliente!</p>
         </button>
         <button class="btn-cart"> 
-          <img src="img/cart.svg" alt="cart">
+          <img id="cart" src="img/cart.svg" alt="cart">
+          <img id="produto" src="img/Grupo 19216.png" alt="dois">
         </button>
       </div>
       <div class="category">
         <div class="nav-menu">
-          <button class="btn-category" onmouseenter="toggleMenu()" onmouseleave="toggleMenu()">
-            <img src="img/Grupo 19319.png" alt="" class="btn-category-img">
+          <button class="btn-category" onmouseenter="showMenu()" onmouseleave="hideCategory()" onclick="hideCategory()">
+            <svg class="botao-svg" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+              <g fill="#005cff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"></path></g></g>
+            </svg>
             <p>Todas as Categorias</p>
           </button>
-          <div id="menu" class="mega-menu">
+          <div id="menu" class="mega-menu" onmouseenter="showMenu()" >
             <div class="column-departamento">
               <div class="departamentos">
                 <div class="dep1">
@@ -118,15 +121,306 @@
             </div>
             <img src="img/caneca-dep.png" alt="" class="caneca-dep">
           </div>
-        </div class="menu">
-        <a class="nav-link" href="#">Departamento</a>
-        <a class="nav-link" href="#">Departamento</a>
-        <a class="nav-link" href="#">Departamento</a>
-        <a class="nav-link" href="#">Departamento</a>
-        <a class="nav-link" href="#">Departamento</a>
-        <a class="nav-link" href="#">Departamento</a>
-        <a class="nav-link" href="#">Departamento</a>
-        <a class="nav-link" href="#">Departamento</a>
+        </div>
+        <div class="nav-link">
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container" onmouseenter="showCategory()">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container" onmouseenter="showCategory()">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container" onmouseenter="showCategory()">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container" onmouseenter="showCategory()">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container" onmouseenter="showCategory()">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container" onmouseenter="showCategory()">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+          <a onmouseenter="showCategory()" href="#">Departamento</a>
+          <div id="category" class="categorias-container" onmouseenter="showCategory()">
+            <div class="categorias-departamento">
+              <div class="categoriad1">
+                <h3>Departamento</h3>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad2">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+              <div class="categoriad3">
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+                <h4>Categoria</h4>
+              </div>
+            </div>
+            <img src="img/caneca-dep.png" alt="" class="caneca-cat">
+          </div>
+        </div>
+        
       </div>
     </header>
   <section class="banner">
@@ -530,9 +824,24 @@
   </footer>
   
   <script>
-    function toggleMenu() {
+    function showMenu() {
       const menu = document.getElementById("menu");
-      menu.style.display = menu.style.display === "flex" ? "none" : "flex"
+      menu.style.display = "flex"
+    }
+
+    function hideMenu() {
+      const menu = document.getElementById("menu");
+      menu.style.display = "none"
+    }
+
+    function showCategory() {
+      const category = document.getElementById("category");
+      category.style.display = "flex"
+    }
+
+    function hideCategory() {
+      const category = document.getElementById("category");
+      category.style.display = "none"
     }
   </script>
 
