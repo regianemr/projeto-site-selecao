@@ -20,18 +20,19 @@
     <img src="img/logo.svg" alt="Avanti" class="logo">
     <div class="search-box">
       <input type="text" id="search-input" class="form-control" placeholder="Digite aqui o que você procura">
-      <button class="btn-search" id="search-button">
+      <button class="btn-search" id="search-button" onclick="buscar()">
         <img src="img/search.svg" alt="search">
       </button>
     </div>
+    
       <div class="client">
         <button class="btn-person">
           <img src="img/Grupo 19210.png" alt=""> 
           <p>Olá,<br> Nome cliente!</p>
         </button>
         <button class="btn-cart"> 
-          <img id="cart" src="img/cart.svg" alt="cart">
-          <img id="produto" src="img/Grupo 19216.png" alt="dois">
+          <img class="cart" src="img/cart.svg" alt="cart">
+          <img class="produto" src="img/Grupo 19216.png" alt="dois">
         </button>
       </div>
       <div class="category">
@@ -437,7 +438,8 @@
       </div>
     </div>
   </section>
-  <section class="lancamentos">
+  <div id="resultado" class="escondido"></div>
+  <section class="lancamentos" id="sessao">
     <div class="text-lancamentos">
       <h2 class="text-left">Lançamentos</h2>
       <h4 class="text-right">Ver mais</h3>
@@ -620,7 +622,7 @@
       </div>
     </div>
   </section>
-  <section class="lancamentos">
+  <section class="lancamentos" >
     <div class="text-lancamentos">
       <h2 class="text-left">Lançamentos</h2>
       <h4 class="text-right">Ver mais</h3>
@@ -768,8 +770,10 @@
         <label class="checkbox">
           <input type="text" placeholder="Digite seu nome" id="text">
           <input type="text" placeholder="Digite seu e-mail" id="text">
-          <input type="checkbox" id="check"> 
-          <p>Estou de acordo com a <span>Política de Privacidade</span></p>
+          <div class="check-box">
+            <input type="checkbox" id="check"> 
+            <p>Estou de acordo com a <span>Política de Privacidade</span></p>
+          </div>
           <button class="btn">Cadastrar</button>
         </label>
       </div>
@@ -843,6 +847,26 @@
       const category = document.getElementById("category");
       category.style.display = "none"
     }
+
+    function buscar() {
+      const input = document.getElementById("search-input").value.trim();
+      const resultado = document.getElementById("resultado")
+      const section = document.getElementById("sessao")
+
+      if (input === "") {
+        resultado.textContent = "Por favor, digite sua busca...";
+        resultado.classList.remove("escondido")
+        return
+      }
+      // } else {
+      sessao.classList.add("escondido")
+
+      resultado.textContent = `Você buscou por: '${input}'`
+      resultado.classList.remove("escondido")
+
+      document.getElementById("search-input").value = "";
+    }
+
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
