@@ -11,10 +11,10 @@ a {
   color: #333;
 }
 
-img {
+/* img {
   max-width: 100%;
   display: block;
-}
+} */
 
 body {
   max-width: 1920px;
@@ -195,7 +195,7 @@ body {
 }
 
 .categorias-container {
-  width: 60%;
+  width: 65%;
   height: 329px;
   background-color: #fff;
   margin-top:40px;
@@ -531,6 +531,11 @@ header {
   font-weight: 700;
   font-size: 14px;
   color: #303030;
+}
+
+.lancamentos .text-right:hover {
+  color: #005CFF;
+  text-decoration: underline;
 }
 
 .produtos {
@@ -934,7 +939,7 @@ header {
 
 .checkbox {
   display: flex;
-  max-width: 1031px;
+  max-width: 90%;
   height: 48px;
   left: 50%;
   gap: 24px;
@@ -956,7 +961,11 @@ header {
   padding-left: 20px;
 }
 
-.checkbox #check {
+.check-box {
+  display: flex;
+}
+
+.check-box #check {
   border: none;
   width: 16px;
   height: 16px;
@@ -976,9 +985,10 @@ header {
   font-size: 12px;
   font-weight: 700;
   color: #656565;
+  margin-left: 5px;
 }
 
-.checkbox span {
+.check-box span {
   text-decoration: underline;
 }
 
@@ -1009,10 +1019,6 @@ header {
   background-color: #F5F5F5;
 }
 
-.footer-container1 .forma-de-pagamento{
-  margin-top: 5rem;
-}
-
 .img-icons {
   max-width: 194px;
   height: 93px;
@@ -1032,9 +1038,13 @@ header {
 }
 
 .info {
+  gap: 5rem;
   margin-top: 50px;
   max-width: 1160px;
-  height: 170px;
+  display: flex;
+}
+
+.infos {
   display: flex;
   gap: 5rem;
 }
@@ -1071,9 +1081,11 @@ header {
 }
 
 .forma-de-pagamento {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  max-width: 545px;
+  height: 24px;
+  background-image: url('../img/formapagamento.png');
+  margin-left: 25%;
+  margin-top: 60px;
 }
 
 .footer-container2 {
@@ -1095,28 +1107,31 @@ header {
   font-weight: 400;
   margin-top: 30px;
   color: #303030;
-  
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.seta {
+  transition: transform 0.3s ease;
+}
+
+.seta.ativo {
+  transform: rotate(180deg);
 }
 
 /* Responsivo */
-/* small laptop (a partir de 1100px) */
-@media (max-width: 1100px) {
-    .nav-container {
-        width: 95%;
-    }
+@media (min-width: 576px) {
+  .toggle-btn {
+    display: none;
+  }
 
-}
-
-/* tablet (900px) */
-@media (max-width: 900px) {
-    .main-banner p {
-        font-size: 32px;
-        padding: 0 6rem;
-    }
-
-    .searchdomain-container {
-        padding: 2rem 4rem;
-    }
+  .conteudo {
+    display: block;
+  }
 }
 
 /* mobile (576px) */
@@ -1153,7 +1168,7 @@ header {
       width: 361px;
       height: 40px;
       margin-top: 110px;
-      margin-right: -280px;
+      margin-right: -265px;
     }
 
     .btn-category {
@@ -1174,6 +1189,7 @@ header {
 
     .banner {
       display: flex;
+      align-items: center;
       width: 390px;
       height: 306px;
     }
@@ -1184,10 +1200,40 @@ header {
       margin-left: -70px;
     }
 
-    .sale {
+    .banner-img img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .banner .sale {
       width: 139px;
       height: 164px;
-      margin-left: -90px;
+      left: 180px;
+      overflow: hidden;
+    }
+
+    .sale h1 {
+      display: flex;
+      flex-direction: column;
+      width: 133px;
+      height: 80px;
+      font-size: 40px;
+    }
+
+    .sale .sale-span {
+      font-size: 40px;
+    }
+
+    .sale .sale-text {
+      width: 133px;
+      height: 16px;
+      font-size: 12px;
+    }
+
+    .sale .off {
+      width: 130px;
+      height: 44px;
+      font-size: 32px;
     }
 
     .lancamentos {
@@ -1199,6 +1245,11 @@ header {
 
     .lancamentos .text-lancamentos {
       margin-left: 2px;
+    }
+
+    .lancamentos .text-right {
+      cursor: pointer;
+      text-decoration: underline;
     }
 
     .produtos .card-img-top {
@@ -1241,9 +1292,10 @@ header {
         flex-direction: column;
     }
 
-    .primeiro-banner .banner-img {
+    .primeiro-banner .banner-img img {
+      width: 391px;
       height: 390px;
-      overflow: hidden;
+      margin-left: 70px;
     }
 
     .primeiro-banner .descricao {
@@ -1361,7 +1413,7 @@ header {
     }
 
     .footer-container1 {
-      width: 390px;
+      width: 100%;
       height: 495px;
     }
 
@@ -1376,18 +1428,68 @@ header {
     }
 
     .forma-de-pagamento {
+      background-image: url('../img/pagamentorespo.png');
       margin-left: 40px;
+      margin-top: 10px;
       width: 288px;
-      height: 64px;
-      background-image: url('../img/Grupo 17899.png');
+      height: 62px;
     }
-
+    
     .footer-container2 {
       width: 90%;
+      height: 131px;
+    }
+
+    .footer-container2 .container-descricao {
+      height: 59px;
+      overflow: hidden;
+    }
+
+    .footer-container2 img {
+      width: 80%;
+      height: 32px;
     }
 
     .footer-container2 p {
       overflow: hidden;
+    }
 
+    .infos {
+      width: 100%;
+      height: 160px;
+      border: 1px solid #ddd;
+      display: grid;
+      gap: 5px 2px;
+    }
+
+    .institucional, .central-ajuda, .atendimento {
+      height: 0px;
+    }
+
+    .institucional h4, .central-ajuda h4, .atendimento h4 {
+      font-size: 16px;
+      width: 390px;
+    }
+
+    .titulo-linha {
+      width: 358px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-left: 3px;
+    }
+
+    .toggle-btn {
+      background: none;
+      cursor: pointer;
+      border: none;
+    }
+
+    .conteudo {
+      display: none;
+    }
+
+    .conteudo.ativo {
+      display: block;
     }
 }

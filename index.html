@@ -788,35 +788,54 @@
             <div class="icons">
               <img src="img/Frame.png" alt="">
             </div>
-            
           </div>
-          <div class="institucional">
-            <h4>Institucional</h4>
-            <h5>Sobre Nós</h5>
-            <h5>Nossas Lojas</h5>
-            <h5>Privaciadade e Segurança</h5>
-            <h5>Termos e Condições</h5>
-          </div>
-          <div class="central-ajuda">
-            <h4>Central de ajuda</h4>
-            <h5>Fale Conosco</h5>
-            <h5>Frete e Entrega</h5>
-            <h5>Trocas e Devoluções</h5>
-            <h5>Formas de Pagamento</h5>
-            <h5>FAQ</h5>
-          </div>
-          <div class="atendimento">
-            <h4>Atendimento</h4>
-            <h5><span>Telefone:</span> (00) 1234-5678</h5>
-            <h5><span>E-mail:</span> exemplo@exemplo.com.br</h5>
-            <h5><span>Horário de atendimento:</span> Segunda a Sábado: 07h00 às 23h00
-              Domingos e Feriados: 07h00 às 21h00
-            </h5>
+          <div class="infos">
+            <div class="institucional">
+              <div class="titulo-linha">
+                <h4>Institucional</h4>
+                <button class="toggle-btn">
+                  <img src="img/setaparabaixo.png" alt="seta" class="icone-seta">
+                </button>
+              </div>
+              <div class="conteudo">
+                <h5>Sobre Nós</h5>
+                <h5>Nossas Lojas</h5>
+                <h5>Privaciadade e Segurança</h5>
+                <h5>Termos e Condições</h5>
+              </div>
+            </div>
+            <div class="central-ajuda">
+              <div class="titulo-linha">
+                <h4>Central de ajuda</h4>
+                <button class="toggle-btn">
+                  <img src="img/setaparabaixo.png" alt="seta" class="icone-seta">
+                </button>
+              </div>
+              <div class="conteudo">
+                <h5>Fale Conosco</h5>
+                <h5>Frete e Entrega</h5>
+                <h5>Trocas e Devoluções</h5>
+                <h5>Formas de Pagamento</h5>
+                <h5>FAQ</h5>
+              </div>
+            </div>
+            <div class="atendimento">
+              <div class="titulo-linha">
+                <h4>Atendimento</h4>
+                <button class="toggle-btn">
+                  <img src="img/setaparabaixo.png" alt="seta" class="icone-seta">
+                </button>
+              </div>
+              <div class="conteudo">
+                <h5><span>Telefone:</span> (00) 1234-5678</h5>
+                <h5><span>E-mail:</span> exemplo@exemplo.com.br</h5>
+                <h5><span>Horário de atendimento:</span> Segunda a Sábado: 07h00 às 23h00 Domingos e Feriados: 07h00 às 21h00
+                </h5>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="forma-de-pagamento">
-          <img src="img/Grupo 10397.png" alt="">
-        </div>
+        <div class="forma-de-pagamento"></div>
       </div>
     </div>
     <div class="footer-container2">
@@ -848,25 +867,30 @@
       category.style.display = "none"
     }
 
-    function buscar() {
-      const input = document.getElementById("search-input").value.trim();
-      const resultado = document.getElementById("resultado")
-      const section = document.getElementById("sessao")
+    function configurarAccordionMobile() {
+    const botoes = document.querySelectorAll('.toggle-btn');
 
-      if (input === "") {
-        resultado.textContent = "Por favor, digite sua busca...";
-        resultado.classList.remove("escondido")
-        return
-      }
-      // } else {
-      sessao.classList.add("escondido")
+    botoes.forEach(botao => {
+      botao.addEventListener('click', () => {
+        const bloco = botao.closest('.info-bloco');
+        const conteudo = bloco.querySelector('.conteudo');
+        const seta = botao.querySelector('.seta');
+        const estaAtivo = conteudo.classList.contains('ativo');
 
-      resultado.textContent = `Você buscou por: '${input}'`
-      resultado.classList.remove("escondido")
+        // Fecha todos os outros
+        document.querySelectorAll('.conteudo').forEach(c => c.classList.remove('ativo'));
+        document.querySelectorAll('.seta').forEach(s => s.classList.remove('ativo'));
 
-      document.getElementById("search-input").value = "";
-    }
+        // Abre o clicado (se estava fechado)
+        if (!estaAtivo) {
+          conteudo.classList.add('ativo');
+          seta.classList.add('ativo');
+        }
+      });
+    });
+  }
 
+  document.addEventListener('DOMContentLoaded', configurarAccordionMobile);
   </script>
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
