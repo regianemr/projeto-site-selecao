@@ -11,11 +11,6 @@ a {
   color: #333;
 }
 
-/* img {
-  max-width: 100%;
-  display: block;
-} */
-
 body {
   max-width: 1920px;
   background-color: #FFFFFF;
@@ -46,11 +41,11 @@ body {
   height: 38px;
 }
 
-.escondido {
+.hidden {
   display: none;
 }
 
-#resultado {
+#result {
   width: 300px;
   height: 30px;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -135,7 +130,7 @@ body {
   display: none;
 }
 
-.column-departamento {
+.column-department {
   width: 234px;
   height: 329px;
   left: -1px;
@@ -143,14 +138,14 @@ body {
   margin-left: 20px;
 }
 
-.departamentos {
+.departments {
   width: 234px;
   height: 329px;
   overflow: auto;
   background-color: #fff;
 }
 
-.departamentos h4 {
+.departments h4 {
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-size: 14px;
@@ -165,12 +160,16 @@ body {
   gap: 92px;
 }
 
-.dep1 span {
+.dep1 span, .hover-img {
   color: #005cff;
   font-weight: 700;
 }
 
-.mega-menu .categorias {
+.dep1 img {
+  margin-top: 20px;
+}
+
+.mega-menu .categories {
   display: flex;
   width: 63px;
   height: 236px;
@@ -178,12 +177,12 @@ body {
   align-items: center;
 }
 
-.categoria1 h4:nth-child(1), .categoria2 h4:nth-child(1), .categoria3 h4:nth-child(1)  {
+.category1 h4:nth-child(1), .category2 h4:nth-child(1), .category3 h4:nth-child(1)  {
   font-weight: 700;
   color: #005CFF;
 }
 
-.categorias h4 {
+.category h4 {
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-size: 14px;
@@ -194,7 +193,7 @@ body {
   cursor: pointer;
 }
 
-.categorias-container {
+.categories-container {
   width: 65%;
   height: 329px;
   background-color: #fff;
@@ -204,7 +203,7 @@ body {
   display: none;
 }
 
-.categorias-departamento h3 {
+.categories-department h3 {
   font-family: 'Nunito Sans';
   font-weight:700;
   font-size: 16px;
@@ -215,7 +214,7 @@ body {
   cursor: pointer;
 }
 
-.categorias-departamento h4 {
+.categories-department h4 {
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-size: 14px;
@@ -226,22 +225,22 @@ body {
   cursor: pointer;
 }
 
-.categoriad1 h4:nth-child(2), .categoriad2 h4:nth-child(1), .categoriad3 h4:nth-child(1)  {
+.categoryd1 h4:nth-child(2), .categoryd2 h4:nth-child(1), .categoryd3 h4:nth-child(1)  {
   font-weight: 700;
   color: #005CFF;
 }
 
-.categoriad2, .categoriad3 {
+.categoryd2, .categoryd3 {
   margin-top: 30px;
 }
 
-.categorias-container a {
+.categories-container a {
   font-size: 16px;
   font-weight: 700;
   margin-left: 20px;
 }
 
-.categorias-container .categorias-departamento {
+.categories-container .categories-department {
   display: flex;
   width: 63px;
   height: 236px;
@@ -249,7 +248,7 @@ body {
   align-items: center;
 }
 
-.caneca-dep {
+.mug-dep {
   max-width: 236px;
   height: 298px;
   border-radius: 10px;
@@ -257,7 +256,7 @@ body {
   margin-left: 600px;
 }
 
-.caneca-cat {
+.mug-cat {
   max-width: 236px;
   height: 298px;
   border-radius: 10px;
@@ -341,7 +340,7 @@ button {
   height: 24px;
 }
 
-.produto {
+.product {
   width: 21px;
   height: 21px;
   margin-left: -10px;
@@ -391,11 +390,11 @@ button {
   line-height: 22px;
 }
 
-.promo .dez {
+.promo .ten {
   background-color: rgb(131, 27, 151) ;
 }
 
-.promo .desconto {
+.promo .discount {
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-style: italic;
@@ -492,7 +491,7 @@ header {
   color: #005CFF;
 }
 
-.lancamentos {
+.releases {
   max-width: 1288px;
   height: 478px;
   margin-top: 5rem;
@@ -501,7 +500,7 @@ header {
   margin-left: 316px;
 }
 
-.text-lancamentos {
+.text-releases {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -511,7 +510,7 @@ header {
   margin-bottom: 20px;
 }
 
-.lancamentos h2 {
+.releases h2 {
   max-width: 123px;
   height: 27px;
   top: 754px;
@@ -522,7 +521,7 @@ header {
   line-height: 100%;
 }
 
-.lancamentos h4 {
+.releases h4 {
   max-width: 63px;
   height: 20px;
   top: 754px;
@@ -533,12 +532,12 @@ header {
   color: #303030;
 }
 
-.lancamentos .text-right:hover {
+.releases .text-right:hover {
   color: #005CFF;
   text-decoration: underline;
 }
 
-.produtos {
+.products {
   display: flex;
   position: relative;
   align-items: center;
@@ -549,7 +548,7 @@ header {
   margin: 0 auto;
 }
 
-.produtos .card-img-top {
+.products .card-img-top {
   max-width: 222px;
   height: 222px;
   top: 6px;
@@ -557,7 +556,7 @@ header {
 }
 
 .card {
-  max-width: 238px;
+  width: 238px;
   height: 409px;
   border-radius: 10px;
   border: 1px solid #DDD;
@@ -594,7 +593,7 @@ header {
   text-align: center;
 }
 
-.card .preco-inicial {
+.card .price-initial {
   width: 58px;
   height: 16px;
   top: 287px;
@@ -606,7 +605,7 @@ header {
   color: #303030;
 }
 
-.card .preco-final {
+.card .price-final {
   width: 64px;
   height: 22px;
   top: 303px;
@@ -617,12 +616,12 @@ header {
   color: #000;
 }
 
-.card .precos-card {
+.card .prices-card {
   width: 64px;
   height: 38px;
 }
 
-.card .parcelamento {
+.card .installment {
   max-width: 143px;
   height: 16px;
   top: 329px;
@@ -636,9 +635,9 @@ header {
   font-weight: 700;
 }
 
-.card .comprar {
-  width: 222px;
-  height: 40px;
+.card .buy {
+  width: 90%;
+  height: 9%;
   border-radius: 8px;
   background-color: #005CFF;
   font-family: 'Nunito Sans';
@@ -649,11 +648,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
+  margin-left: 10px;
   margin-top: 10px;
 }
 
-.card .comprar:hover {
+.card .buy:hover {
   background-color: #004CD2;
 }
 
@@ -667,7 +666,7 @@ header {
   padding-left: 8px;
 }
 
-.card .precos {
+.card .prices {
   display: flex;
   justify-content: space-around;
   max-width: 143px;
@@ -727,7 +726,7 @@ header {
   cursor: pointer;
 }
 
-.novo {
+.new {
   max-width: 41px;
   height: 22px;
   margin-top: 7px;
@@ -739,7 +738,7 @@ header {
   justify-content: center;
 }
 
-.novo p {
+.new p {
   width: 30px;
   height: 22px;
   top: 8px;
@@ -752,7 +751,7 @@ header {
   color: #ffffff;
 }
 
-.primeiro-banner {
+.first-banner {
   height: 747px;
   display: flex;
   align-items: center;
@@ -760,7 +759,7 @@ header {
   margin-top: 30px;
 }
 
-.primeiro-banner .banner-img {
+.first-banner .banner-img {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -770,12 +769,12 @@ header {
   background-color: #C2C2C2;
 }
 
-.primeiro-banner img {
+.first-banner img {
   max-width: 523px;
   height: 528px;
 }
 
-.primeiro-banner .descricao {
+.first-banner .description {
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -786,21 +785,21 @@ header {
   font-family: 'Nunito';
 }
 
-.descricao h1 {
+.description h1 {
   font-weight: 700;
   font-size: 30px;
   line-height: 140%;
   letter-spacing: 4%;
 }
 
-.descricao h4 {
+.description h4 {
   font-weight: 400;
   font-size: 18px;
   line-height: 140%;
   letter-spacing: 5%;
 }
 
-.segundo-banner {
+.second-banner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -810,7 +809,7 @@ header {
   background-color: #DEDEDE;
 }
 
-.segundo-banner .descricao-segunda {
+.second-banner .description-second {
   max-width: 476px;
   height: 567px;
   margin-top: 50px;
@@ -819,7 +818,7 @@ header {
   justify-content: center;
 }
 
-.descricao-segunda h1 {
+.description-second h1 {
   display: flex;
   justify-content: center;
   margin-bottom: 40px;
@@ -831,7 +830,7 @@ header {
   color: #4F4F4F;
 }
 
-.segundo-banner .descricao-segunda p {
+.second-banner .description-second p {
   max-width: 360;
   height: 125;
   top: 92px;
@@ -841,38 +840,38 @@ header {
   color: #4F4F4F;
 }
 
-.descricao-segunda .grupos {
+.description-second .groups {
   display: flex;
   flex-direction: column;
   max-width: 470px;
   height: 125px;
 }
 
-.segundo-banner .descricao-segunda img {
+.second-banner .description-second img {
   max-width: 90px;
   height: 90px;
 }
 
-.segundo-banner .banner-img {
+.second-banner .banner-img {
   max-width: 652px;
   height: 728px;
 }
 
-.grupo1 {
+.group1 {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
 }
 
-.grupo2 {
+.group2 {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-bottom: 30px;
 }
 
-.grupo3 {
+.group3 {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -888,7 +887,7 @@ header {
   height: 660px;
 }
 
-.avanti-img .contato {
+.avanti-img .contact {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -904,7 +903,7 @@ header {
   background-color: #005cff;
 }
 
-.cadastro {
+.register {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -913,11 +912,11 @@ header {
   margin-top: 30px;
 }
 
-.cadastro span {
+.register span {
   color: #005CFF;
 }
 
-.cadastro h1 {
+.register h1 {
   max-width: 301px;
   height: 27px;
   white-space: nowrap; 
@@ -1014,9 +1013,11 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 366px;
   margin-top: 30px;
+  padding-bottom: 30px;
   background-color: #F5F5F5;
+  flex-direction: column;
+  align-items: center;
 }
 
 .img-icons {
@@ -1080,12 +1081,11 @@ header {
   color: #303030;
 }
 
-.forma-de-pagamento {
-  max-width: 545px;
-  height: 24px;
+.payment-method {
+  width: 545px;
+  min-height: 24px;
   background-image: url('../img/formapagamento.png');
-  margin-left: 25%;
-  margin-top: 60px;
+  margin-top: 100px;
 }
 
 .footer-container2 {
@@ -1099,7 +1099,7 @@ header {
   gap: 2rem;
 }
 
-.container-descricao p {
+.container-description p {
   max-width: 1074px;
   height: 59px;
   font-family: 'Nunito Sans';
@@ -1115,11 +1115,11 @@ header {
   cursor: pointer;
 }
 
-.seta {
+.arrow {
   transition: transform 0.3s ease;
 }
 
-.seta.ativo {
+.arrow.ativo {
   transform: rotate(180deg);
 }
 
@@ -1129,7 +1129,7 @@ header {
     display: none;
   }
 
-  .conteudo {
+  .content {
     display: block;
   }
 }
@@ -1149,12 +1149,10 @@ header {
 
     .promo p {
       height: 44px;
-      margin-left: 22px;
     }
 
     .nav-container {
       display: flex;
-      width: 390px;
       height: 132px;
       align-items: center;
     }
@@ -1190,8 +1188,7 @@ header {
     .banner {
       display: flex;
       align-items: center;
-      width: 390px;
-      height: 306px;
+      max-height: 306px;
     }
 
     .banner-img {
@@ -1236,23 +1233,31 @@ header {
       font-size: 32px;
     }
 
-    .lancamentos {
+    #result {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      font-size: 15px;
+      color: #333;
+      margin-top: 30px;
+      margin-left: 10px;
+    }
+
+    .releases {
       max-width: 358px;
       height: 426px;
       margin-left: 6px;
       margin-top: 1px;
     }
 
-    .lancamentos .text-lancamentos {
+    .releases .text-releases {
       margin-left: 2px;
     }
 
-    .lancamentos .text-right {
+    .releases .text-right {
       cursor: pointer;
       text-decoration: underline;
     }
 
-    .produtos .card-img-top {
+    .products .card-img-top {
       width: 158px;
       height: 150px;
     }
@@ -1276,7 +1281,7 @@ header {
       display: none;
     }
 
-    .card .comprar {
+    .card .buy {
       width: 158px;
       height: 40px;
     }
@@ -1285,20 +1290,20 @@ header {
       padding-left: 3px;
     }
    
-    .primeiro-banner {
-        max-width: 391px;
-        height: 732px;
-        display: flex;
-        flex-direction: column;
+    .first-banner {
+      max-width: 391px;
+      height: 732px;
+      display: flex;
+      flex-direction: column;
     }
 
-    .primeiro-banner .banner-img img {
+    .first-banner .banner-img img {
       width: 391px;
       height: 390px;
       margin-left: 70px;
     }
 
-    .primeiro-banner .descricao {
+    .first-banner .description {
       max-width: 343px;
       height: 266px;
       overflow: hidden;
@@ -1307,50 +1312,50 @@ header {
       text-align: justify;
     }
 
-    .primeiro-banner .descricao h1  {
+    .first-banner .description h1  {
       font-size: 24px;
     }
 
-    .primeiro-banner .descricao h4  {
+    .first-banner .description h4  {
       font-size: 14px;
     }
-    .segundo-banner {
+
+    .second-banner {
       width: 100%;
-      height: 717px;
       display: flex;
       flex-direction: column;
     }
 
-    .segundo-banner .banner-img {
+    .second-banner .banner-img {
       width: 90%;
       height: 349px;
       margin-top: -290%;
       margin-left: 2px;
     }
 
-    .segundo-banner .descricao-segunda {
+    .second-banner .description-second {
       width: 100%;
       height: 717px;
     }
 
-    .descricao-segunda h1 {
+    .description-second h1 {
       font-size: 20px;
       margin-top: 20px;
     }
 
-    .descricao-segunda .grupos {
+    .description-second .groups {
       width: 90%;
       height: 242px;
       margin-top: -50px;
       margin-left: 10px;
     }
 
-    .descricao-segunda .grupos img {
+    .description-second .groups img {
       width: 60px;
       height: 60px;
     }
 
-    .descricao-segunda .grupos p {
+    .description-second .groups p {
       font-size: 12px;
     }
 
@@ -1360,23 +1365,23 @@ header {
       margin: 0 auto;
     }
 
-    .avanti-img .contato {
+    .avanti-img .contact {
       max-width: 390px;
       height: 75px;
     }
     
-    .contato p {
+    .contact p {
       font-size: 16px;
       font-weight: 600;
       text-align: center;
     }
 
-    .cadastro {
+    .register {
       width: 358px;
       height: 330px;
     }
 
-    .cadastro h1 {
+    .register h1 {
       font-size: 16px;
     }
 
@@ -1412,9 +1417,10 @@ header {
       width: 326px;
     }
 
-    .footer-container1 {
+    .footer-container {
       width: 100%;
-      height: 495px;
+      background-color: #f5f5f5;
+      align-items: normal;
     }
 
     .info {
@@ -1427,69 +1433,76 @@ header {
       margin-bottom: 20px;
     }
 
-    .forma-de-pagamento {
+    .payment-method {
       background-image: url('../img/pagamentorespo.png');
       margin-left: 40px;
-      margin-top: 10px;
-      width: 288px;
-      height: 62px;
+      max-width: 288px;
+      flex-shrink: 0;
+      height: 65px;
     }
     
     .footer-container2 {
       width: 90%;
-      height: 131px;
-    }
-
-    .footer-container2 .container-descricao {
-      height: 59px;
+      margin: auto;
+      height: auto;
       overflow: hidden;
     }
-
-    .footer-container2 img {
-      width: 80%;
-      height: 32px;
-    }
-
-    .footer-container2 p {
-      overflow: hidden;
+    
+    .footer-container2 .container-description {
+      overflow: clip;
+      text-align: justify;
     }
 
     .infos {
       width: 100%;
-      height: 160px;
-      border: 1px solid #ddd;
-      display: grid;
-      gap: 5px 2px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px 2px;
+      height: auto;
+      
     }
 
     .institucional, .central-ajuda, .atendimento {
-      height: 0px;
+      height: 0;
     }
 
     .institucional h4, .central-ajuda h4, .atendimento h4 {
       font-size: 16px;
-      width: 390px;
+      margin-left: 5px;
     }
 
-    .titulo-linha {
-      width: 358px;
+    .title-line {
+      align-items: center;
+      border: 1px solid #ddd;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      margin-left: 3px;
+      outline: none;
+      padding: 10px 0;
+      width: 100%;
+      width: 100vw;
+      color: #000;
+      padding-right: 10px;
     }
 
     .toggle-btn {
-      background: none;
+      transition: transform 0.3s ease;
+      display: inline-block;
       cursor: pointer;
       border: none;
     }
 
-    .conteudo {
-      display: none;
+    .rotate-btn {
+      transform: rotate(180deg);
     }
 
-    .conteudo.ativo {
-      display: block;
+    .content {
+      margin-left: 5px;
+      margin-top: 5px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.1s ease-out;
+      color: #303030;
+      line-height: 20px;
     }
+
 }
