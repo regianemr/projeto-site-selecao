@@ -38,6 +38,7 @@ function showAccordionMenu(content, title, idSeta) {
     seta.classList.add("rotate-btn")
 }
 
+// Funções para esconder 
 function hideMenu() {
     const menu = document.getElementById("menu");
     menu.style.display = "none"
@@ -56,7 +57,7 @@ function hideAccordionMenu(content, title, idSeta) {
     seta.classList.remove("rotate-btn")
 }
 
-
+// Funções de alternar
 function toggleAccordionMenu(content, title, idSeta) {
     const footer = document.getElementById("footer2")
 
@@ -95,6 +96,7 @@ function toggleAtendimento() {
     toggleAccordionMenu(content, title, "icon-arrow-3")
 }
 
+// Swiper
 const swiper = new Swiper(".mySwiper", {
     slidesPerView: 3, 
     spaceBetween: 17,

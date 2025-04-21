@@ -5,40 +5,40 @@
 }
 
 a {
+  color: #333;
+  cursor: pointer;
   text-decoration: none;
   width: 100%;
-  cursor: pointer;
-  color: #333;
 }
 
 body {
-  max-width: 1920px;
   background-color: #FFFFFF;
+  max-width: 1920px;
 }
 
 .nav-container {
   display: flex;
+  height: 118px;
   justify-content: space-between;
   width: 100%;
-  height: 118px;
 }
 
 .logo {
-  width: 152.58px;
   height: 27.08px;
   margin-left: 300px;
+  width: 152.58px;
 }
 
 .search-box {
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  display: flex;
+  height: 38px;
   margin-bottom: 2rem;
   margin-left: -350px;
-  display: flex;
-  align-items: center;
-  border: 1px solid #ddd;
-  border-radius: 10px;
   overflow: hidden;
   width: 600px;
-  height: 38px;
 }
 
 .hidden {
@@ -46,20 +46,20 @@ body {
 }
 
 #result {
-  width: 300px;
-  height: 30px;
+  color: #333;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 18px;
-  color: #333;
-  margin-top: 30px;
-  margin-left: 310px;
+  height: 30px;
   margin-bottom: 100px;
+  margin-left: 310px;
+  margin-top: 30px;
+  width: 300px;
 }
 
 .search-box input {
   border: none;
-  margin-left: 20px;
   flex: 1;
+  margin-left: 20px;
   outline: none;
 }
 
@@ -76,23 +76,23 @@ body {
 
 .category {
   display: flex;
-  width: 100%;
-  top: 108px;
-  left: 331px;
-  height: 22px;
-  position: absolute;
-  gap: 45px;
   font-size: 14px;
+  gap: 45px;
+  height: 22px;
+  left: 331px;
+  position: absolute;
+  top: 108px;
+  width: 100%;
 }
 
 .btn-category {
+  align-items: center;
+  background: none;
   display: flex;
   gap: 8px;
-  width: 152px;
   height: 22px;
-  align-items: center;
   justify-content: center;
-  background: none;
+  width: 152px;
 }
 
 .btn-category path,
@@ -110,54 +110,54 @@ body {
 }
 
 .btn-category p {
-  width: 130px;
-  height: 22px;
   font-family: 'Nunito Sans';
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  height: 22px;
   white-space: nowrap; 
+  width: 130px;
 }
 
 /* Todas as categorias */
 
 .mega-menu {
-  width: 1261px;
-  height: 329px;
   background-color: #fff;
+  display: none;
+  height: 329px;
   margin-top: 15px;
   position: absolute;
+  width: 1261px;
   z-index: 10000;
-  display: none;
 }
 
 .column-department {
-  width: 234px;
+  background-color: #fff;
   height: 329px;
   left: -1px;
-  background-color: #fff;
   margin-left: 20px;
+  width: 234px;
 }
 
 .departments {
-  width: 234px;
+  background-color: #fff;
   height: 329px;
   overflow: auto;
-  background-color: #fff;
+  width: 234px;
 }
 
 .departments h4 {
-  font-family: 'Nunito Sans';
-  font-weight: 400;
-  font-size: 14px;
   color: #303030;
   cursor: pointer;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 400;
 }
 
 .dep1 {
-  display: flex;
   align-items: center;
-  margin-top: 15px;
+  display: flex;
   gap: 92px;
+  margin-top: 15px;
 }
 
 .dep1 span, .hover-img {
@@ -170,64 +170,64 @@ body {
 }
 
 .mega-menu .categories {
-  display: flex;
-  width: 63px;
-  height: 236px;
-  gap: 70px;
   align-items: center;
+  display: flex;
+  gap: 70px;
+  height: 236px;
+  width: 63px;
 }
 
 .category1 h4:nth-child(1), .category2 h4:nth-child(1), .category3 h4:nth-child(1)  {
-  font-weight: 700;
   color: #005CFF;
+  font-weight: 700;
 }
 
 .category h4 {
-  font-family: 'Nunito Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  margin-top: 15px;
-  margin-left: 30px;
   color: #656565;
   cursor: pointer;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .categories-container {
-  width: 65%;
-  height: 329px;
   background-color: #fff;
+  display: none;
+  height: 329px;
   margin-top:40px;
   position: absolute;
+  width: 65%;
   z-index: 10000;
-  display: none;
 }
 
 .categories-department h3 {
-  font-family: 'Nunito Sans';
-  font-weight:700;
-  font-size: 16px;
-  line-height: 100%;
-  margin-top: 15px;
-  margin-left: 30px;
   color: #000;
   cursor: pointer;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+  font-weight:700;
+  line-height: 100%;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .categories-department h4 {
-  font-family: 'Nunito Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 100%;
-  margin-top: 15px;
-  margin-left: 30px;
   color: #656565;
   cursor: pointer;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  margin-left: 30px;
+  margin-top: 15px;
 }
 
 .categoryd1 h4:nth-child(2), .categoryd2 h4:nth-child(1), .categoryd3 h4:nth-child(1)  {
-  font-weight: 700;
   color: #005CFF;
+  font-weight: 700;
 }
 
 .categoryd2, .categoryd3 {
@@ -241,27 +241,27 @@ body {
 }
 
 .categories-container .categories-department {
-  display: flex;
-  width: 63px;
-  height: 236px;
-  gap: 70px;
   align-items: center;
+  display: flex;
+  gap: 70px;
+  height: 236px;
+  width: 63px;
 }
 
 .mug-dep {
-  max-width: 236px;
-  height: 298px;
   border-radius: 10px;
-  margin-top: 15px;
+  height: 298px;
   margin-left: 600px;
+  margin-top: 15px;
+  max-width: 236px;
 }
 
 .mug-cat {
-  max-width: 236px;
-  height: 298px;
   border-radius: 10px;
-  margin-top: 15px;
+  height: 298px;
   margin-left: 800px;
+  margin-top: 15px;
+  max-width: 236px;
 }
 
 .nav-menu {
@@ -274,27 +274,27 @@ body {
 }
 
 .nav-link a {
-  font-family: 'Nunito Sans';
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
   color: #000;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }
 
 .nav-link a:hover {
-  font-weight: 700;
   color: #005CFF;
+  font-weight: 700;
 }
 
 .menu {
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  left: 0;
   position: absolute;
   top: 40px;
-  left: 0;
-  background: white;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   width: 200px;
-  display: none;
-  border-radius: 5px;
 }
 
 .menu ul {
@@ -303,16 +303,16 @@ body {
 }
 
 .menu a {
-  text-decoration: none;
   display: block;
   padding: 8px;
+  text-decoration: none;
 }
 
 button {
-  padding: 0;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
 }  
 
 .btn-search {
@@ -321,14 +321,14 @@ button {
 }
 
 .client {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 164.31px;
-  height: 28px;
-  top: 52px;
-  left: 1417px;
+  display: flex;
   gap: 24px;
+  height: 28px;
+  justify-content: center;
+  left: 1417px;
+  top: 52px;
+  width: 164.31px;
 }
 
 .btn-cart {
@@ -336,58 +336,58 @@ button {
 }
 
 .cart{
-  width: 24px;
   height: 24px;
+  width: 24px;
 }
 
 .product {
-  width: 21px;
   height: 21px;
   margin-left: -10px;
   margin-top: -10px;
+  width: 21px;
 }
 
 .btn-person {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 115.57px;
-  height: 28px;
+  display: flex;
   gap: 5px;
+  height: 28px;
+  justify-content: center;
+  width: 115.57px;
 }
 
 .btn-person p {
   font-family: 'Nunito Sans';
-  width: 87px;
-  height: 28px;
   font-size: 14px;
-  line-height: 14px;
   font-weight: 600;
+  height: 28px;
   letter-spacing: 0%;
-  white-space: nowrap; 
+  line-height: 14px;
   text-align: justify;
+  white-space: nowrap; 
+  width: 87px;
 }
 
 .promo {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  width: 1920px;
-  height: 30px;
   background-color: #005CFF;
   color: #fff;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  width: 1920px;
 }
 
 .promo p {
-  max-width: 546px;
-  height: 22px;
-  left: 687px;
-  margin-top: 4px;
   border-radius: 4px;
   font-family: 'Nunito Sans';
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
+  height: 22px;
+  left: 687px;
   line-height: 22px;
+  margin-top: 4px;
+  max-width: 546px;
 }
 
 .promo .ten {
@@ -402,58 +402,58 @@ button {
 
 header {
   background-color: #ffffff;
-  padding: 15px 30px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 15px 30px;
 }
 
 .logo {
+  color: #333;
   font-size: 24px;
   font-weight: bold;
-  color: #333;
 }
 
 .banner {
-  max-width: 1920px;
-  height: 510px;
-  top: 148px;
-  display: flex;
   background-color: #E7E7EA;
+  display: flex;
+  height: 510px;
+  max-width: 1920px;
+  top: 148px;
 }
 
 .banner-img {
-  max-width: 685px;
-  height: 510px;
-  top: 148px;
-  margin-left: 250px;
   color: #d9d9d9;
+  height: 510px;
+  margin-left: 250px;
+  max-width: 685px;
+  top: 148px;
 }
 
 .banner .sale {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
-  max-width: 576px;
-  height: 224.98px;
-  top: 291px;
-  left: 944.97px;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
   font-family: 'Nunito';
+  gap: 12px;
+  height: 224.98px;
+  left: 944.97px;
+  max-width: 576px;
+  position: absolute;
+  text-align: center;
+  top: 291px;
 }
 
 .banner h1 {
-  white-space: nowrap; 
-  max-width: 575px;
-  height: 136px;
-  top: -25.51px;
-  left: 0.52px;
-  font-weight: 700;
-  font-size: 100px;
-  font-family: 'Nunito';
-  line-height: 100%;
-  letter-spacing: 0%;
   color: #000;
+  font-family: 'Nunito';
+  font-size: 100px;
+  font-weight: 700;
+  height: 136px;
+  left: 0.52px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  max-width: 575px;
+  top: -25.51px;
+  white-space: nowrap; 
 }
 
 .banner .sale-span {
@@ -464,72 +464,72 @@ header {
 }
 
 .sale .sale-text {
-  white-space: nowrap; 
-  max-width: 580px;
-  height: 34px;
-  top: 122.49px;
-  left: -1.98px;
-  font-size: 25px;
-  font-family: 'Nunito';
-  font-weight: 700;
-  line-height: 100%;
-  letter-spacing: 30%;
   color: #005CFF;
+  font-family: 'Nunito';
+  font-size: 25px;
+  font-weight: 700;
+  height: 34px;
+  left: -1.98px;
+  letter-spacing: 30%;
+  line-height: 100%;
+  max-width: 580px;
+  top: 122.49px;
+  white-space: nowrap; 
 }
 
 .sale  .off {
-  white-space: nowrap; 
-  max-width: 244px;
-  height: 82px;
-  top: 168.49px;
-  left: 166.02px;
+  color: #005CFF;
   font-family: 'Nunito';
   font-size: 60px;
   font-weight: 700;
-  line-height: 100%;
+  height: 82px;
+  left: 166.02px;
   letter-spacing: 0%;
-  color: #005CFF;
+  line-height: 100%;
+  max-width: 244px;
+  top: 168.49px;
+  white-space: nowrap; 
 }
 
 .releases {
-  max-width: 1288px;
   height: 478px;
-  margin-top: 5rem;
   margin-bottom: 5rem;
-  top: 754px;
   margin-left: 316px;
+  margin-top: 5rem;
+  max-width: 1288px;
+  top: 754px;
 }
 
 .text-releases {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  max-width: 1259px;
+  display: flex;
   height: 27px;
-  margin-top: 30px;
+  justify-content: space-between;
   margin-bottom: 20px;
+  margin-top: 30px;
+  max-width: 1259px;
 }
 
 .releases h2 {
-  max-width: 123px;
-  height: 27px;
-  top: 754px;
-  left: 331px;
   font-family: 'Nunito Sans';
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
+  height: 27px;
+  left: 331px;
   line-height: 100%;
+  max-width: 123px;
+  top: 754px;
 }
 
 .releases h4 {
-  max-width: 63px;
-  height: 20px;
-  top: 754px;
-  left: 3px;
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  font-size: 14px;
   color: #303030;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 700;
+  height: 20px;
+  left: 3px;
+  max-width: 63px;
+  top: 754px;
 }
 
 .releases .text-right:hover {
@@ -538,97 +538,97 @@ header {
 }
 
 .products {
-  display: flex;
-  position: relative;
   align-items: center;
-  justify-content: center;
-  max-width: 1258px;
-  height: 409px;
   box-sizing: border-box;
+  display: flex;
+  height: 409px;
+  justify-content: center;
   margin: 0 auto;
+  max-width: 1258px;
+  position: relative;
 }
 
 .products .card-img-top {
-  max-width: 222px;
   height: 222px;
-  top: 6px;
   left: 8px;
+  max-width: 222px;
+  top: 6px;
 }
 
 .card {
-  width: 238px;
-  height: 409px;
   border-radius: 10px;
   border: 1px solid #DDD;
+  height: 409px;
+  width: 238px;
 }
 
 .card a {
-  display: inline;
-  max-width: 64px;
-  height: 20px;
-  top: 295px;
-  left: 8px;
-  border-radius: 4px;
-  padding: 4px 8px 4px 8px;
   background-color: #5EC0BE;
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  font-size: 11px;
-  line-height: 12px;
-  text-decoration: underline;
+  border-radius: 4px;
   color: #fff;
+  display: inline;
+  font-family: 'Nunito Sans';
+  font-size: 11px;
+  font-weight: 700;
+  height: 20px;
+  left: 8px;
+  line-height: 12px;
+  max-width: 64px;
+  padding: 4px 8px 4px 8px;
+  text-decoration: underline;
+  top: 295px;
 }
 
 .card h3 {
-  max-width: 222px;
-  height: 39px;
-  top: 244px;
-  left: 8px;
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 100%;
-  letter-spacing: 0%;
   color: #303030;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 700;
+  height: 39px;
+  left: 8px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  max-width: 222px;
   text-align: center;
+  top: 244px;
 }
 
 .card .price-initial {
-  width: 58px;
-  height: 16px;
-  top: 287px;
-  left: 8px;
-  font-family: 'Nunito Sans';
-  font-weight: 400;
-  font-size: 12px;
-  text-decoration: line-through;
   color: #303030;
+  font-family: 'Nunito Sans';
+  font-size: 12px;
+  font-weight: 400;
+  height: 16px;
+  left: 8px;
+  text-decoration: line-through;
+  top: 287px;
+  width: 58px;
 }
 
 .card .price-final {
-  width: 64px;
-  height: 22px;
-  top: 303px;
-  left: 8px;
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  font-size: 16px;
   color: #000;
+  font-family: 'Nunito Sans';
+  font-size: 16px;
+  font-weight: 700;
+  height: 22px;
+  left: 8px;
+  top: 303px;
+  width: 64px;
 }
 
 .card .prices-card {
-  width: 64px;
   height: 38px;
+  width: 64px;
 }
 
 .card .installment {
-  max-width: 143px;
-  height: 16px;
-  top: 329px;
-  left: 8px;
   font-family: 'Nunito Sans';
-  font-weight: 400;
   font-size: 12px;
+  font-weight: 400;
+  height: 16px;
+  left: 8px;
+  max-width: 143px;
+  top: 329px;
 }
 
 .card .span {
@@ -636,20 +636,20 @@ header {
 }
 
 .card .buy {
-  width: 90%;
-  height: 9%;
-  border-radius: 8px;
+  align-items: center;
   background-color: #005CFF;
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
+  border-radius: 8px;
   color: #FFFFFF;
   display: flex;
-  align-items: center;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 700;
+  height: 9%;
   justify-content: center;
+  line-height: 20px;
   margin-left: 10px;
   margin-top: 10px;
+  width: 90%;
 }
 
 .card .buy:hover {
@@ -658,36 +658,36 @@ header {
 
 .card .details {
   display: flex;
-  width: fit-content;
   display: inline-block;
-  max-width: 222px;
   height: 101px;
-  top: 244px;
+  max-width: 222px;
   padding-left: 8px;
+  top: 244px;
+  width: fit-content;
 }
 
 .card .prices {
   display: flex;
-  justify-content: space-around;
-  max-width: 143px;
   height: 42px;
-  top: 287px;
+  justify-content: space-around;
   left: 8px;
+  max-width: 143px;
+  top: 287px;
 }
 
 .swiper {
-  width: 100%;
   position: relative;
+  width: 100%;
 }
 
 .swiper-button-next ,
 .swiper-button-prev {
-  width: 32px;
+  cursor: pointer;
   height: 32px;
+  overflow: hidden;
   top: 50%;
   transform: translateY(-50%);
-  cursor: pointer;
-  overflow: hidden;
+  width: 32px;
 }
 
 .swiper-button-prev {
@@ -711,85 +711,85 @@ header {
 }
 
 .swiper-button-prev:hover {
-  transition: 0.2s;
   background-image: url('../img/seta-para-a-esquerda.png');
+  transition: 0.2s;
 }
 
 .swiper-button-next:hover {
-  transition: 0.3s;
   background-image: url('../img/seta-para-a-direita.png');
+  transition: 0.3s;
 }
 
 .swiper-pagination {
-  position: relative;
-  transform: translateY(50%);
   cursor: pointer;
+  transform: translateY(50%);
+  position: relative;
 }
 
 .new {
-  max-width: 41px;
-  height: 22px;
-  margin-top: 7px;
-  margin-left: 8px;
-  border-radius: 4px;
-  background-color: #00264E;
-  display: flex;
   align-items: center;
+  background-color: #00264E;
+  border-radius: 4px;
+  display: flex;
+  height: 22px;
   justify-content: center;
+  margin-left: 8px;
+  margin-top: 7px;
+  max-width: 41px;
 }
 
 .new p {
-  width: 30px;
-  height: 22px;
-  top: 8px;
-  left: 13px;
-  font-family: 'Nunito Sans';
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 22px;
-  letter-spacing: 0%;
   color: #ffffff;
+  font-family: 'Nunito Sans';
+  font-size: 10px;
+  font-weight: 700;
+  height: 22px;
+  left: 13px;
+  letter-spacing: 0%;
+  line-height: 22px;
+  top: 8px;
+  width: 30px;
 }
 
 .first-banner {
-  height: 747px;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 747px;
   justify-content: center;
   margin-top: 30px;
 }
 
 .first-banner .banner-img {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  width: 652px;
-  height: 747px;
-  left: 0.5px;
   background-color: #C2C2C2;
+  display: flex;
+  height: 747px;
+  justify-content: center;
+  left: 0.5px;
+  width: 652px;
 }
 
 .first-banner img {
-  max-width: 523px;
   height: 528px;
+  max-width: 523px;
 }
 
 .first-banner .description {
   display: flex;
   flex-direction: column;
-  gap: 22px;
-  max-width: 487px;
-  height: 536px;
-  margin-top: 105px;
-  margin-left: 30px;
   font-family: 'Nunito';
+  gap: 22px;
+  height: 536px;
+  margin-left: 30px;
+  margin-top: 105px;
+  max-width: 487px;
 }
 
 .description h1 {
-  font-weight: 700;
   font-size: 30px;
-  line-height: 140%;
+  font-weight: 700;
   letter-spacing: 4%;
+  line-height: 140%;
 }
 
 .description h4 {
@@ -800,73 +800,66 @@ header {
 }
 
 .second-banner {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  max-width: 1930px;
-  height: 819px;
-  margin-top: 40px;
   background-color: #DEDEDE;
+  display: flex;
+  height: 819px;
+  justify-content: center;
+  margin-top: 40px;
+  max-width: 1930px;
 }
 
 .second-banner .description-second {
-  max-width: 476px;
-  height: 567px;
-  margin-top: 50px;
-  font-family: 'Nunito';
   align-items: center;
+  font-family: 'Nunito';
+  height: 567px;
   justify-content: center;
+  margin-top: 50px;
+  max-width: 476px;
 }
 
 .description-second h1 {
+  color: #4F4F4F;
   display: flex;
-  justify-content: center;
-  margin-bottom: 40px;
-  max-width: 481px;
-  height: 42px;
   font-size: 30px;
   font-weight: 700;
+  height: 42px;
+  justify-content: center;
   line-height: 140%;
-  color: #4F4F4F;
+  margin-bottom: 40px;
+  max-width: 481px;
 }
 
 .second-banner .description-second p {
-  max-width: 360;
-  height: 125;
-  top: 92px;
-  left: 113px;
-  font-size: 18px;
-  line-height: 140%;
   color: #4F4F4F;
+  font-size: 18px;
+  height: 125;
+  left: 113px;
+  line-height: 140%;
+  max-width: 360;
+  top: 92px;
 }
 
 .description-second .groups {
   display: flex;
   flex-direction: column;
-  max-width: 470px;
   height: 125px;
+  max-width: 470px;
 }
 
 .second-banner .description-second img {
-  max-width: 90px;
   height: 90px;
+  max-width: 90px;
 }
 
 .second-banner .banner-img {
-  max-width: 652px;
   height: 728px;
+  max-width: 652px;
 }
 
-.group1 {
-  display: flex;
+.group1, .group2 {
   align-items: center;
-  gap: 10px;
-  margin-bottom: 30px;
-}
-
-.group2 {
   display: flex;
-  align-items: center;
   gap: 10px;
   margin-bottom: 30px;
 }
@@ -883,32 +876,32 @@ header {
 
 .avanti-img img {
   display: block;
-  width: 100%;
   height: 660px;
+  width: 100%;
 }
 
 .avanti-img .contact {
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-family: 'Nunito';
+  background-color: #005cff;
   color: #FFFFFF;
+  display: flex;
+  font-family: 'Nunito';
   font-size: 30px;
+  height: 132px;
+  justify-content: center;
+  left: 50%;
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 100%;
   transform: translate(-50%, -50%);
-  height: 132px;
-  background-color: #005cff;
+  width: 100%;
 }
 
 .register {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   height: 230px;
+  justify-content: center;
   margin-top: 30px;
 }
 
@@ -917,47 +910,47 @@ header {
 }
 
 .register h1 {
-  max-width: 301px;
-  height: 27px;
-  white-space: nowrap; 
   font-family: 'Nunito Sans';
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
+  height: 27px;
   margin-bottom: 20px;
+  max-width: 301px;
+  white-space: nowrap; 
 }
 
 .checkbox-container {
-  display: flex;
   align-items: center;
+  background-color: #DEDEDE;
+  border-radius: 8px;
+  display: flex;
+  height: 176px;
   justify-content: center;
   width: 70%;
-  height: 176px;
-  border-radius: 8px;
-  background-color: #DEDEDE;
 }
 
 .checkbox {
+  align-items: center;
   display: flex;
-  max-width: 90%;
+  gap: 24px;
   height: 48px;
   left: 50%;
-  gap: 24px;
+  max-width: 90%;
   white-space: nowrap; 
-  align-items: center;
 }
 
 .checkbox #text{
-  width: 280px;
-  height: 48px;
   border-radius: 8px;
-  outline: none;
   border: none;
-  font-weight: 400;
-  font-family: 'Nunito Sans';
-  font-size: 14px;
   color: #303030;
   flex: 1;
+  font-family: 'Nunito Sans';
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  outline: none;
   padding-left: 20px;
+  width: 280px;
 }
 
 .check-box {
@@ -965,26 +958,26 @@ header {
 }
 
 .check-box #check {
-  border: none;
-  width: 16px;
-  height: 16px;
-  border: none;
   border-radius: 4px;
+  border: none;
+  border: none;
+  height: 16px;
+  width: 16px;
 }
 
 .checkbox #text::placeholder {
-  max-width: 102px;
   height: 19px;
+  max-width: 102px;
 }
 
 .checkbox p {
-  max-width: 254px;
-  height: 16px;
+  color: #656565;
   font-family: 'Nunito Sans';
   font-size: 12px;
   font-weight: 700;
-  color: #656565;
+  height: 16px;
   margin-left: 5px;
+  max-width: 254px;
 }
 
 .check-box span {
@@ -992,15 +985,15 @@ header {
 }
 
 .btn {
-  width: 121px;
-  height: 48px;
-  border-radius: 8px;
   background-color: #005CFF;
+  border-radius: 8px;
   color: #fff;
   font-family: 'Nunito Sans';
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
+  height: 48px;
   line-height: 20px;
+  width: 121px;
 }
 
 .btn:hover {
@@ -1010,27 +1003,27 @@ header {
 /* FOOTER */
 
 .footer-container {
+  align-items: center;
+  background-color: #F5F5F5;
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  width: 100%;
   margin-top: 30px;
   padding-bottom: 30px;
-  background-color: #F5F5F5;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
 .img-icons {
-  max-width: 194px;
-  height: 93px;
   display: flex;
-  gap: 40px;
   flex-direction: column;
+  gap: 40px;
+  height: 93px;
+  max-width: 194px;
 }
 
 .logo-avanti {
-  width: 152px;
   height: 27px;
+  width: 152px;
 }
 
 .icons {
@@ -1039,10 +1032,10 @@ header {
 }
 
 .info {
+  display: flex;
   gap: 5rem;
   margin-top: 50px;
   max-width: 1160px;
-  display: flex;
 }
 
 .infos {
@@ -1051,15 +1044,15 @@ header {
 }
 
 .institucional, .central-ajuda {
-  max-width: 186px;
   height: 142px;
   line-height: 28px;
+  max-width: 186px;
 }
 
 .atendimento {
-  max-width: 245px;
   height: 156px;
   line-height: 28px;
+  max-width: 245px;
 }
 
 .atendimento span {
@@ -1068,45 +1061,45 @@ header {
 }
  
 .institucional h4, .central-ajuda h4, .atendimento h4 {
+  color: #303030;
   font-family: 'Nunito Sans';
   font-weight: 700;
   font-size: 14px;
-  color: #303030;
 }
 
 .institucional h5, .central-ajuda h5, .atendimento h5 {
+  color: #303030;
   font-family: 'Nunito Sans';
   font-weight: 400;
   font-size: 12px;
-  color: #303030;
 }
 
 .payment-method {
-  width: 545px;
-  min-height: 24px;
   background-image: url('../img/formapagamento.png');
   margin-top: 100px;
+  min-height: 24px;
+  width: 545px;
 }
 
 .footer-container2 {
-  width: 100%;
-  height: 211px;
+  align-items: center;
   background-color: #FFF;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   gap: 2rem;
+  height: 211px;
+  text-align: center;
+  width: 100%;
 }
 
 .container-description p {
-  max-width: 1074px;
-  height: 59px;
+  color: #303030;
   font-family: 'Nunito Sans';
   font-size: 12px;
   font-weight: 400;
+  height: 59px;
   margin-top: 30px;
-  color: #303030;
+  max-width: 1074px;
 }
 
 .toggle-btn {
@@ -1142,9 +1135,9 @@ header {
     }
 
     .promo {
-      width: 390px;
       height: 52px;
       text-align: center;
+      width: 390px;
     }
 
     .promo p {
@@ -1152,9 +1145,9 @@ header {
     }
 
     .nav-container {
+      align-items: center;
       display: flex;
       height: 132px;
-      align-items: center;
     }
 
     .btn-cart {
@@ -1163,17 +1156,17 @@ header {
     }
 
     .search-box {
-      width: 361px;
       height: 40px;
-      margin-top: 110px;
       margin-right: -265px;
+      margin-top: 110px;
+      width: 361px;
     }
 
     .btn-category {
-      width: 23px;
       height: 21px;
       margin-left: -320px;
       margin-top: -15px;
+      width: 23px;
     }
 
     .btn-category p, .btn-person p, .btn-person img, .nav-link {
@@ -1186,35 +1179,35 @@ header {
     }
 
     .banner {
-      display: flex;
       align-items: center;
+      display: flex;
       max-height: 306px;
     }
 
     .banner-img {
-      width: 225px;
       height: 306px;
       margin-left: -70px;
+      width: 225px;
     }
 
     .banner-img img {
-      max-width: 100%;
       display: block;
+      max-width: 100%;
     }
 
     .banner .sale {
-      width: 139px;
       height: 164px;
       left: 180px;
       overflow: hidden;
+      width: 139px;
     }
 
     .sale h1 {
       display: flex;
       flex-direction: column;
-      width: 133px;
-      height: 80px;
       font-size: 40px;
+      height: 80px;
+      width: 133px;
     }
 
     .sale .sale-span {
@@ -1234,18 +1227,18 @@ header {
     }
 
     #result {
+      color: #333;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       font-size: 15px;
-      color: #333;
-      margin-top: 30px;
       margin-left: 10px;
+      margin-top: 30px;
     }
 
     .releases {
-      max-width: 358px;
       height: 426px;
       margin-left: 6px;
       margin-top: 1px;
+      max-width: 358px;
     }
 
     .releases .text-releases {
