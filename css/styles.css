@@ -1452,7 +1452,6 @@ header {
       flex-direction: column;
       gap: 50px 2px;
       height: auto;
-      
     }
 
     .institucional, .central-ajuda, .atendimento {
@@ -1497,5 +1496,4 @@ header {
       color: #303030;
       line-height: 20px;
     }
-
 }
